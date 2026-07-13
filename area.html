@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Formula Solver | Area</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+
+    <span>π</span>
+    <span>√</span>
+    <span>+</span>
+    <span>−</span>
+    <span>×</span>
+    <span>÷</span>
+    <span>=</span>
+    <span>∞</span>
+
+</div>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+    <img src="img/logo.png" alt="Logo">
+
+    <span>Math Formula Solver</span>
+
+</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html" class="active">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>Area Calculators</h1>
+
+    <p>
+        Calculate the area of common geometric figures using the formulas below.
+    </p>
+
+</section>
+
+<!-- ================= CALCULATORS ================= -->
+
+<section class="calculator-grid">
+
+    <!-- Rectangle -->
+
+    <div class="calc-card">
+
+        <h2>Rectangle</h2>
+
+        <p class="formula">
+            Formula: <strong>A = Length × Width</strong>
+        </p>
+
+        <input type="number" id="rectLength" placeholder="Enter Length">
+
+        <input type="number" id="rectWidth" placeholder="Enter Width">
+
+        <button onclick="areaRectangle()">
+            Solve
+        </button>
+
+        <p id="rectangleAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Square -->
+
+    <div class="calc-card">
+
+        <h2>Square</h2>
+
+        <p class="formula">
+            Formula: <strong>A = Side²</strong>
+        </p>
+
+        <input type="number" id="squareSide" placeholder="Enter Side Length">
+
+        <button onclick="areaSquare()">
+            Solve
+        </button>
+
+        <p id="squareAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Triangle -->
+
+    <div class="calc-card">
+
+        <h2>Triangle</h2>
+
+        <p class="formula">
+            Formula: <strong>A = (Base × Height) ÷ 2</strong>
+        </p>
+
+        <input type="number" id="triangleBase" placeholder="Enter Base">
+
+        <input type="number" id="triangleHeight" placeholder="Enter Height">
+
+        <button onclick="areaTriangle()">
+            Solve
+        </button>
+
+        <p id="triangleAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Circle -->
+
+    <div class="calc-card">
+
+        <h2>Circle</h2>
+
+        <p class="formula">
+            Formula: <strong>A = πr²</strong>
+        </p>
+
+        <input type="number" id="circleAreaRadius" placeholder="Enter Radius">
+
+        <button onclick="areaCircle()">
+            Solve
+        </button>
+
+        <p id="circleAreaOutput">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Parallelogram -->
+
+    <div class="calc-card">
+
+        <h2>Parallelogram</h2>
+
+        <p class="formula">
+            Formula: <strong>A = Base × Height</strong>
+        </p>
+
+        <input type="number" id="paraBase" placeholder="Enter Base">
+
+        <input type="number" id="paraHeight" placeholder="Enter Height">
+
+        <button onclick="areaParallelogram()">
+            Solve
+        </button>
+
+        <p id="parallelogramAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Trapezoid -->
+
+    <div class="calc-card">
+
+        <h2>Trapezoid</h2>
+
+        <p class="formula">
+            Formula:
+            <strong>A = ((Base₁ + Base₂) × Height) ÷ 2</strong>
+        </p>
+
+        <input type="number" id="trapBase1" placeholder="Enter Base 1">
+
+        <input type="number" id="trapBase2" placeholder="Enter Base 2">
+
+        <input type="number" id="trapHeight" placeholder="Enter Height">
+
+        <button onclick="areaTrapezoid()">
+            Solve
+        </button>
+
+        <p id="trapezoidAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMATION ================= -->
+
+<section class="section light">
+
+    <h2>Area Formula Guide</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>Rectangle</h3>
+            <p>Multiply the length by the width.</p>
+        </div>
+
+        <div>
+            <h3>Square</h3>
+            <p>Multiply one side by itself.</p>
+        </div>
+
+        <div>
+            <h3>Triangle</h3>
+            <p>Multiply the base and height, then divide by two.</p>
+        </div>
+
+        <div>
+            <h3>Circle</h3>
+            <p>Multiply π by the square of the radius.</p>
+        </div>
+
+        <div>
+            <h3>Parallelogram</h3>
+            <p>Multiply the base by the height.</p>
+        </div>
+
+        <div>
+            <h3>Trapezoid</h3>
+            <p>Add the two bases, multiply by the height, then divide by two.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Math Formula Solver. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

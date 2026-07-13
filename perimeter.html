@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Formula Solver | Perimeter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+
+    <span>π</span>
+    <span>√</span>
+    <span>+</span>
+    <span>−</span>
+    <span>×</span>
+    <span>÷</span>
+    <span>=</span>
+    <span>∞</span>
+
+</div>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+    <img src="img/logo.png" alt="Logo">
+
+    <span>Math Formula Solver</span>
+
+</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html" class="active">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>Perimeter Calculators</h1>
+
+    <p>
+        Calculate the perimeter or circumference of common geometric figures using the formulas below.
+    </p>
+
+</section>
+
+<!-- ================= CALCULATORS ================= -->
+
+<section class="calculator-grid">
+
+    <!-- Rectangle -->
+
+    <div class="calc-card">
+
+        <h2>Rectangle</h2>
+
+        <p class="formula">
+            Formula: <strong>P = 2(L + W)</strong>
+        </p>
+
+        <input type="number" id="perRectLength" placeholder="Enter Length">
+
+        <input type="number" id="perRectWidth" placeholder="Enter Width">
+
+        <button onclick="perimeterRectangle()">
+            Solve
+        </button>
+
+        <p id="rectanglePerimeterResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Square -->
+
+    <div class="calc-card">
+
+        <h2>Square</h2>
+
+        <p class="formula">
+            Formula: <strong>P = 4 × Side</strong>
+        </p>
+
+        <input type="number" id="perSquareSide" placeholder="Enter Side Length">
+
+        <button onclick="perimeterSquare()">
+            Solve
+        </button>
+
+        <p id="squarePerimeterResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Triangle -->
+
+    <div class="calc-card">
+
+        <h2>Triangle</h2>
+
+        <p class="formula">
+            Formula: <strong>P = Side₁ + Side₂ + Side₃</strong>
+        </p>
+
+        <input type="number" id="triSide1" placeholder="Enter Side 1">
+
+        <input type="number" id="triSide2" placeholder="Enter Side 2">
+
+        <input type="number" id="triSide3" placeholder="Enter Side 3">
+
+        <button onclick="perimeterTriangle()">
+            Solve
+        </button>
+
+        <p id="trianglePerimeterResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Circle -->
+
+    <div class="calc-card">
+
+        <h2>Circle (Circumference)</h2>
+
+        <p class="formula">
+            Formula: <strong>C = 2πr</strong>
+        </p>
+
+        <input type="number" id="circRadius" placeholder="Enter Radius">
+
+        <button onclick="perimeterCircle()">
+            Solve
+        </button>
+
+        <p id="circlePerimeterResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Parallelogram -->
+
+    <div class="calc-card">
+
+        <h2>Parallelogram</h2>
+
+        <p class="formula">
+            Formula: <strong>P = 2(Base + Side)</strong>
+        </p>
+
+        <input type="number" id="paraSideBase" placeholder="Enter Base">
+
+        <input type="number" id="paraSideLength" placeholder="Enter Side Length">
+
+        <button onclick="perimeterParallelogram()">
+            Solve
+        </button>
+
+        <p id="parallelogramPerimeterResult">
+            Answer:
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMATION ================= -->
+
+<section class="section light">
+
+    <h2>Perimeter Formula Guide</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>Rectangle</h3>
+            <p>Add the length and width, then multiply the result by two.</p>
+        </div>
+
+        <div>
+            <h3>Square</h3>
+            <p>Multiply one side by four.</p>
+        </div>
+
+        <div>
+            <h3>Triangle</h3>
+            <p>Add all three side lengths together.</p>
+        </div>
+
+        <div>
+            <h3>Circle</h3>
+            <p>The perimeter of a circle is called its circumference.</p>
+        </div>
+
+        <div>
+            <h3>Parallelogram</h3>
+            <p>Add the base and side length, then multiply by two.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Math Formula Solver. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1664 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+  
+
+   background:linear-gradient(
+135deg,
+#142648,
+#1d3c7b,
+#0d47a1,
+#07142d);
+
+background-size:400% 400%;
+
+animation:gradientMove 18s ease infinite;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#081a43;
+    --secondary:#1e40af;
+    --accent:#6aa3ff;
+
+    --light:#4a80ad;
+    --gray:#f1f5f9;
+    --dark:#23364f;
+
+    --shadow:0 10px 25px rgba(0,0,0,.10);
+
+    --radius:15px;
+
+    --transition:.35s;
+
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+header{
+
+    background:var(--light);
+    box-shadow:var(--shadow);
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.navbar{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    .navbar{
+
+    padding:10px 0;
+
+}
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo img{
+
+    width:50px;      
+    height:50px;
+    object-fit:contain;
+
+}
+
+.logo span{
+
+    font-size:1.6rem;
+    font-weight:700;
+    color:var(--primary);
+
+}
+.nav-links{
+
+    display:flex;
+    gap:28px;
+
+}
+
+.nav-links li a{
+
+    color:#ededed;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.nav-links li a:hover{
+
+    color:var(--primary);
+
+}
+
+.nav-links li a.active{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+
+    url("img/banner.gif") center/cover no-repeat;
+
+}
+
+.hero-content{
+
+    width:90%;
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    margin-bottom:35px;
+
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+   button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(96,165,250,.6);
+
+}
+
+}
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.page-title{
+
+    text-align:center;
+
+    padding:70px 20px 40px;
+
+}
+
+.page-title h1{
+
+    font-size:2.6rem;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    color: #e2e8f0;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+.section{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 0;
+
+}
+
+.section h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+.section p{
+
+    text-align:center;
+
+    color: #e2e8f0;
+
+    max-width:900px;
+
+    margin:15px auto;
+
+}
+
+.light{
+
+    background:var(--gray);
+
+    width:100%;
+
+    padding:70px 5%;
+
+}
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.banner{
+
+    margin:70px auto;
+
+    width:90%;
+    max-width:1200px;
+
+    background:linear-gradient(135deg,var(--primary),var(--accent));
+
+    color:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:70px 30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.banner h2{
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+}
+
+.banner p{
+
+    max-width:750px;
+
+    margin:auto auto 30px;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:var(--dark);
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+footer p{
+
+    letter-spacing:.5px;
+
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.card{
+
+    background:var(--light);
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    text-align:center;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+
+}
+
+.card p{
+
+    color: #e2e8f0;
+
+    margin-bottom:20px;
+
+}
+
+.card a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 30px rgba(96,165,250,.25);
+
+
+}
+
+/* =====================================================
+   CALCULATOR GRID
+===================================================== */
+
+.calculator-grid{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* =====================================================
+   CALCULATOR CARD
+===================================================== */
+
+.calc-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.calc-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.calc-card h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.calc-card .formula{
+
+    background:#eef5ff;
+
+    color:var(--secondary);
+
+    border-left:5px solid var(--primary);
+
+    padding:12px;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+    font-weight:500;
+
+    text-align:center;
+
+}
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.calc-card input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:var(--transition);
+
+}
+
+.calc-card input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 8px rgba(37,99,235,.25);
+
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.calc-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.calc-card button:hover{
+
+    background:var(--secondary);
+
+}
+
+/* =====================================================
+   OUTPUTS
+===================================================== */
+
+.calc-card p:last-child{
+
+    margin-top:20px;
+
+    background:#f8fafc;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+    border:1px solid #dbeafe;
+
+}
+
+/* =====================================================
+   INFORMATION GRID
+===================================================== */
+
+.info-grid{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.info-grid div{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.info-grid div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-grid h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.info-grid p{
+
+    text-align:left;
+
+    margin:0;
+
+   color: #e2e8f0;
+
+}
+
+/* =====================================================
+   TIPS
+===================================================== */
+
+.tips{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.tips li{
+
+    background:white;
+
+    margin:15px 0;
+
+    padding:18px 20px;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+/* =====================================================
+   FORMULA TEXT
+===================================================== */
+
+.formula strong{
+
+    color:var(--secondary);
+
+}
+
+/* =====================================================
+   PLACEHOLDER STYLE
+===================================================== */
+
+input::placeholder{
+
+    color:#9ca3af;
+
+}
+
+/* =====================================================
+   SPACING
+===================================================== */
+
+.calc-card input:last-of-type{
+
+    margin-bottom:18px;
+
+}
+
+.calc-card button{
+
+    margin-bottom:15px;
+
+}
+
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.about-container{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.about-image{
+
+    flex:1;
+    min-width:280px;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:300px;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid var(--primary);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.about-content{
+
+    flex:2;
+    min-width:300px;
+
+}
+
+.about-content h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+
+}
+
+.about-content p{
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+    color: #e2e8f0;
+
+}
+
+/* =====================================================
+   PERSONAL INFORMATION
+===================================================== */
+
+.info-grid div strong{
+
+    color:var(--primary);
+
+}
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.skill{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.skill:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.skill p{
+
+   color: #e2e8f0;
+
+}
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-info{
+
+    width:90%;
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-info p{
+
+    text-align:left;
+
+    margin:15px 0;
+
+    font-size:1.05rem;
+
+}
+
+.contact-info strong{
+
+    color:var(--primary);
+
+}
+
+/* =====================================================
+   LIST STYLING
+===================================================== */
+
+.section ul{
+
+    padding-left:20px;
+
+}
+
+.section ul li{
+
+    margin-bottom:12px;
+
+}
+
+/* =====================================================
+   ICON CIRCLES
+===================================================== */
+
+.icon-circle{
+
+    width:80px;
+    height:80px;
+
+    margin:auto auto 20px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+
+}
+
+/* =====================================================
+   HOVER EFFECTS
+===================================================== */
+
+.card,
+.calc-card,
+.info-grid div,
+.skill{
+
+    transition:all .35s ease;
+
+}
+
+.card:hover,
+.calc-card:hover,
+.info-grid div:hover,
+.skill:hover{
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+/* =====================================================
+   BUTTON ANIMATION
+===================================================== */
+
+.btn,
+.calc-card button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn::after,
+.calc-card button::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(255,255,255,.15);
+
+    transition:.45s;
+
+}
+
+.btn:hover::after,
+.calc-card button:hover::after{
+
+    left:100%;
+
+}
+
+/* =====================================================
+   IMAGE EFFECTS
+===================================================== */
+
+.card img{
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    transition:var(--transition);
+
+}
+
+.card img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#b2c4e9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/* =====================================================
+   FADE-IN ANIMATION
+===================================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.page-title,
+.section,
+.cards,
+.calculator-grid,
+.banner{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 992px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-content p{
+        text-align:center;
+    }
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        position:relative;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:var(--primary);
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:white;
+
+        display:none;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        box-shadow:var(--shadow);
+
+        padding:20px 0;
+
+        gap:15px;
+
+    }
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+    .hero{
+
+        min-height:70vh;
+
+        padding:50px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .page-title{
+
+        padding:50px 20px;
+
+    }
+
+    .page-title h1{
+
+        font-size:2.1rem;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .calculator-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .banner{
+
+        padding:50px 20px;
+
+    }
+
+    .banner h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+    .logo{
+
+        font-size:1.4rem;
+
+    }
+
+    .hero{
+
+        min-height:65vh;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero p{
+
+        font-size:.95rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .calc-card{
+
+        padding:20px;
+
+    }
+
+    .calc-card h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .calc-card input{
+
+        padding:12px;
+
+        font-size:15px;
+
+    }
+
+    .calc-card button{
+
+        padding:12px;
+
+        font-size:15px;
+
+    }
+
+    .page-title h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .section h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .banner h2{
+
+        font-size:1.7rem;
+
+    }
+
+    footer{
+
+        font-size:.9rem;
+
+    }
+
+}
+
+/* =====================================================
+   LARGE SCREENS
+===================================================== */
+
+@media (min-width:1400px){
+
+    .hero h1{
+
+        font-size:4.5rem;
+
+    }
+
+    .hero p{
+
+        font-size:1.35rem;
+
+    }
+
+    .page-title h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/* =====================================================
+   INPUT SPIN BUTTON REMOVAL
+===================================================== */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+
+    -webkit-appearance:none;
+
+    margin:0;
+
+}
+
+input[type=number]{
+
+    -moz-appearance:textfield;
+
+}
+
+/* =====================================================
+   BUTTON ACTIVE EFFECT
+===================================================== */
+
+button:active,
+.btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* =====================================================
+   INPUT HOVER
+===================================================== */
+
+input:hover{
+
+    border-color:var(--accent);
+
+}
+
+/* =====================================================
+   LINK TRANSITION
+===================================================== */
+
+a{
+
+    transition:var(--transition);
+
+}
+
+/* =====================================================
+   CARD BORDER EFFECT
+===================================================== */
+
+.card,
+.calc-card{
+
+    border:2px solid transparent;
+
+}
+
+.card:hover,
+.calc-card:hover{
+
+    border-color:#dbeafe;
+
+}
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+footer a{
+
+    color:white;
+
+}
+
+footer a:hover{
+
+    color:#93c5fd;
+
+}
+
+/* =====================================================
+   END OF FILE
+===================================================== */
+
+/* ================= CALCULATOR ================= */
+
+.calculator-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+
+}
+
+.calculator{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    width:360px;
+
+}
+
+#display{
+
+    width:100%;
+    padding:20px;
+    font-size:2rem;
+    text-align:right;
+    margin-bottom:20px;
+    border:2px solid #ddd;
+    border-radius:10px;
+
+}
+
+.buttons{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+
+}
+
+.buttons button{
+
+    padding:18px;
+    font-size:1.2rem;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#1d4ed8;
+
+}
+
+.equal{
+
+    grid-column:span 2;
+    background:#16a34a !important;
+
+}
+
+/* ==========================
+   FLOATING MATH SYMBOLS
+========================== */
+
+.background-animation{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+.background-animation span{
+
+    position:absolute;
+
+    color:rgba(255,255,255,.08);
+
+    font-size:40px;
+
+    animation:float 20s linear infinite;
+
+}
+
+.background-animation span:nth-child(1){left:5%; animation-duration:18s;}
+.background-animation span:nth-child(2){left:18%; animation-duration:22s;}
+.background-animation span:nth-child(3){left:32%; animation-duration:19s;}
+.background-animation span:nth-child(4){left:46%; animation-duration:25s;}
+.background-animation span:nth-child(5){left:60%; animation-duration:21s;}
+.background-animation span:nth-child(6){left:74%; animation-duration:24s;}
+.background-animation span:nth-child(7){left:88%; animation-duration:20s;}
+.background-animation span:nth-child(8){left:96%; animation-duration:17s;}
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(110vh) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(-120vh) rotate(360deg);
+
+    }
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/* ==========================================
+   STARS
+========================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    radial-gradient(circle, rgba(236, 249, 132, 0.685) 1px, transparent 1px);
+
+    background-size:70px 70px;
+
+    opacity:.15;
+
+    animation:twinkle 6s ease-in-out infinite;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+@keyframes twinkle{
+
+    0%,100%{
+
+        opacity:.12;
+
+    }
+
+    50%{
+
+        opacity:.28;
+
+    }
+
+}

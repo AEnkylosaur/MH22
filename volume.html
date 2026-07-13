@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Formula Solver | Volume</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+
+    <span>π</span>
+    <span>√</span>
+    <span>+</span>
+    <span>−</span>
+    <span>×</span>
+    <span>÷</span>
+    <span>=</span>
+    <span>∞</span>
+
+</div>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+       <div class="logo">
+
+    <img src="img/logo.png" alt="Logo">
+
+    <span>Math Formula Solver</span>
+
+</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html" class="active">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>Volume Calculators</h1>
+
+    <p>
+        Find the volume of common three-dimensional figures using the formulas below.
+    </p>
+
+</section>
+
+<!-- ================= CALCULATORS ================= -->
+
+<section class="calculator-grid">
+
+    <!-- Cube -->
+
+    <div class="calc-card">
+
+        <h2>Cube</h2>
+
+        <p class="formula">
+            Formula: <strong>V = Side³</strong>
+        </p>
+
+        <input type="number" id="cubeSide" placeholder="Enter Side Length">
+
+        <button onclick="volumeCube()">
+            Solve
+        </button>
+
+        <p id="cubeVolumeResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Cylinder -->
+
+    <div class="calc-card">
+
+        <h2>Cylinder</h2>
+
+        <p class="formula">
+            Formula: <strong>V = πr²h</strong>
+        </p>
+
+        <input type="number" id="cylinderRadius" placeholder="Enter Radius">
+
+        <input type="number" id="cylinderHeight" placeholder="Enter Height">
+
+        <button onclick="volumeCylinder()">
+            Solve
+        </button>
+
+        <p id="cylinderVolumeResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Cone -->
+
+    <div class="calc-card">
+
+        <h2>Cone</h2>
+
+        <p class="formula">
+            Formula: <strong>V = (πr²h) ÷ 3</strong>
+        </p>
+
+        <input type="number" id="coneRadius" placeholder="Enter Radius">
+
+        <input type="number" id="coneHeight" placeholder="Enter Height">
+
+        <button onclick="volumeCone()">
+            Solve
+        </button>
+
+        <p id="coneVolumeResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Sphere -->
+
+    <div class="calc-card">
+
+        <h2>Sphere</h2>
+
+        <p class="formula">
+            Formula: <strong>V = (4/3)πr³</strong>
+        </p>
+
+        <input type="number" id="sphereRadius" placeholder="Enter Radius">
+
+        <button onclick="volumeSphere()">
+            Solve
+        </button>
+
+        <p id="sphereVolumeResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Rectangular Prism -->
+
+    <div class="calc-card">
+
+        <h2>Rectangular Prism</h2>
+
+        <p class="formula">
+            Formula: <strong>V = Length × Width × Height</strong>
+        </p>
+
+        <input type="number" id="prismLength" placeholder="Enter Length">
+
+        <input type="number" id="prismWidth" placeholder="Enter Width">
+
+        <input type="number" id="prismHeight" placeholder="Enter Height">
+
+        <button onclick="volumePrism()">
+            Solve
+        </button>
+
+        <p id="prismVolumeResult">
+            Answer:
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMATION ================= -->
+
+<section class="section light">
+
+    <h2>Volume Formula Guide</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>Cube</h3>
+            <p>Raise the side length to the third power.</p>
+        </div>
+
+        <div>
+            <h3>Cylinder</h3>
+            <p>Multiply π, the square of the radius, and the height.</p>
+        </div>
+
+        <div>
+            <h3>Cone</h3>
+            <p>Take one-third of the cylinder volume with the same base and height.</p>
+        </div>
+
+        <div>
+            <h3>Sphere</h3>
+            <p>Multiply four-thirds of π by the cube of the radius.</p>
+        </div>
+
+        <div>
+            <h3>Rectangular Prism</h3>
+            <p>Multiply the length, width, and height.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Math Formula Solver. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

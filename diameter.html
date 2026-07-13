@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Formula Solver | Diameter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+
+    <span>π</span>
+    <span>√</span>
+    <span>+</span>
+    <span>−</span>
+    <span>×</span>
+    <span>÷</span>
+    <span>=</span>
+    <span>∞</span>
+
+</div>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+       <div class="logo">
+
+    <img src="img/logo.png" alt="Logo">
+
+    <span>Math Formula Solver</span>
+
+</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="diameter.html" class="active">Diameter</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="volume.html">Volume</a></li>
+            <li><a href="perimeter.html">Perimeter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>Circle Formula Calculators</h1>
+
+    <p>
+        Calculate diameter, radius, circumference, and circle area using the formulas below.
+    </p>
+
+</section>
+
+<!-- ================= CALCULATORS ================= -->
+
+<section class="calculator-grid">
+
+    <!-- Diameter -->
+
+    <div class="calc-card">
+
+        <h2>Diameter</h2>
+
+        <p class="formula">
+            Formula: <strong>D = 2r</strong>
+        </p>
+
+        <input type="number" id="radiusDiameter" placeholder="Enter Radius">
+
+        <button onclick="calculateDiameter()">
+            Solve
+        </button>
+
+        <p id="diameterResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Radius -->
+
+    <div class="calc-card">
+
+        <h2>Radius</h2>
+
+        <p class="formula">
+            Formula: <strong>r = D ÷ 2</strong>
+        </p>
+
+        <input type="number" id="diameterRadius" placeholder="Enter Diameter">
+
+        <button onclick="calculateRadius()">
+            Solve
+        </button>
+
+        <p id="radiusResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Circumference -->
+
+    <div class="calc-card">
+
+        <h2>Circumference</h2>
+
+        <p class="formula">
+            Formula: <strong>C = π × D</strong>
+        </p>
+
+        <input type="number" id="circleDiameter" placeholder="Enter Diameter">
+
+        <button onclick="calculateCircumference()">
+            Solve
+        </button>
+
+        <p id="circumferenceResult">
+            Answer:
+        </p>
+
+    </div>
+
+    <!-- Circle Area -->
+
+    <div class="calc-card">
+
+        <h2>Area of Circle</h2>
+
+        <p class="formula">
+            Formula: <strong>A = πr²</strong>
+        </p>
+
+        <input type="number" id="circleRadius" placeholder="Enter Radius">
+
+        <button onclick="calculateCircleArea()">
+            Solve
+        </button>
+
+        <p id="circleAreaResult">
+            Answer:
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= NOTES ================= -->
+
+<section class="section light">
+
+    <h2>Circle Formula Guide</h2>
+
+    <div class="info-grid">
+
+        <div>
+
+            <h3>Diameter</h3>
+
+            <p>
+                The diameter is twice the length of the radius.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Radius</h3>
+
+            <p>
+                The radius is one-half of the diameter.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Circumference</h3>
+
+            <p>
+                Circumference is the total distance around a circle.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Area</h3>
+
+            <p>
+                Area measures the amount of space inside a circle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Math Formula Solver. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
